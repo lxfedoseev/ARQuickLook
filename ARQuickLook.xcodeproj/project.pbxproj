@@ -13,6 +13,9 @@
 		835F6DB1213C2382007798DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835F6DB0213C2382007798DB /* Assets.xcassets */; };
 		835F6DB4213C2382007798DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835F6DB2213C2382007798DB /* LaunchScreen.storyboard */; };
 		835F6DBC213C2AC6007798DB /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F6DBB213C2AC6007798DB /* GalleryTableViewCell.swift */; };
+		D9E366B3221F256700C0FE62 /* Gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D9E366B0221F256700C0FE62 /* Gramophone.usdz */; };
+		D9E366B4221F256700C0FE62 /* Pig.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D9E366B1221F256700C0FE62 /* Pig.usdz */; };
+		D9E366B5221F256700C0FE62 /* Teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D9E366B2221F256700C0FE62 /* Teapot.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		835F6DB3213C2382007798DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		835F6DB5213C2382007798DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		835F6DBB213C2AC6007798DB /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
+		D9E366B0221F256700C0FE62 /* Gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gramophone.usdz; sourceTree = "<group>"; };
+		D9E366B1221F256700C0FE62 /* Pig.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pig.usdz; sourceTree = "<group>"; };
+		D9E366B2221F256700C0FE62 /* Teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = Teapot.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		835F6DA8213C2381007798DB /* ARQuickLook */ = {
 			isa = PBXGroup;
 			children = (
+				D9E366AF221F256700C0FE62 /* Models */,
 				835F6DA9213C2381007798DB /* AppDelegate.swift */,
 				835F6DAB213C2381007798DB /* ViewController.swift */,
 				835F6DAD213C2381007798DB /* Main.storyboard */,
@@ -65,6 +72,16 @@
 				835F6DB5213C2382007798DB /* Info.plist */,
 			);
 			path = ARQuickLook;
+			sourceTree = "<group>";
+		};
+		D9E366AF221F256700C0FE62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9E366B0221F256700C0FE62 /* Gramophone.usdz */,
+				D9E366B1221F256700C0FE62 /* Pig.usdz */,
+				D9E366B2221F256700C0FE62 /* Teapot.usdz */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +142,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9E366B5221F256700C0FE62 /* Teapot.usdz in Resources */,
+				D9E366B4221F256700C0FE62 /* Pig.usdz in Resources */,
 				835F6DB4213C2382007798DB /* LaunchScreen.storyboard in Resources */,
 				835F6DB1213C2382007798DB /* Assets.xcassets in Resources */,
 				835F6DAF213C2381007798DB /* Main.storyboard in Resources */,
+				D9E366B3221F256700C0FE62 /* Gramophone.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,9 +29,10 @@
  */
 
 import UIKit
+import QuickLook
 
 class ViewController: UIViewController,
-  UITableViewDataSource, UITableViewDelegate {
+  UITableViewDataSource, UITableViewDelegate, QLPreviewControllerDelegate, QLPreviewControllerDataSource {
   
   @IBOutlet var tableView: UITableView!
 
@@ -74,9 +75,28 @@ class ViewController: UIViewController,
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     modelIndex = indexPath.row
+    // 1
+    let previewController = QLPreviewController()
+    // 2
+    previewController.dataSource = self
+    previewController.delegate = self
+    // 3
+    present(previewController, animated: false)
   }
   
   // MARK: - QLPreviewControllerDataSource
+    func numberOfPreviewItems(in controller: QLPreviewController) -> Int {
+        return 1
+    }
+    
+    func previewController(
+        _ controller: QLPreviewController,
+        previewItemAt index: Int) -> QLPreviewItem {
+        let url = Bundle.main.url(
+            forResource: modelNames[modelIndex],
+            withExtension: "usdz")!
+        return url as QLPreviewItem
+    }
   
 }
 
